@@ -1,0 +1,27 @@
+.slider {
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: -webkit-grab;
+  cursor: grab;
+  background-color: var(--dark-color);
+  max-width: 750px;
+}
+
+.slider__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__item {
+  height: 6.5rem;
+  aspect-ratio: 1;
+  padding: 1rem;
+}
+
+.slider__item img {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+/*# sourceMappingURL=Slider.css.map */

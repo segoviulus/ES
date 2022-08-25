@@ -1,0 +1,68 @@
+
+.app__header {
+    height: 90vh;
+    background: linear-gradient(to right, var(--gradient02), var(--gradient02)), url('../../assets/erucasativa_portada_color.jpg');
+
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    @media screen and (max-width: 425px) {
+        background: url('../../assets/bgmobile_bw.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        
+      }
+
+    &-text{
+            font-family: var(--font-secu);
+            text-align: center;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+
+
+            @media (min-width: 425px) and (max-width: 767px) {
+                font-size: 1rem;
+              }
+
+              @media (min-width: 768px) and (max-width: 1023px) {
+                font-size: 1.3rem;
+              }
+
+              @media (min-width: 1024px) {
+              font-size: 1.8rem;
+            }
+    }
+}
+
+.badge-es {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+   
+    div > img {
+      @media (min-width: 425px) and (max-width: 767px) {
+        position: absolute;
+        bottom: 5rem;
+        left: 1rem;
+        width: 350px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: 650px;
+      }
+      @media (min-width: 1024px) {
+        width: 900px;
+      }
+    }
+}
+
+.descripcion-es {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+
+    
+}

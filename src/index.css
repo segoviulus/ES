@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Kanit:wght@900&display=swap');
+
+:root {
+    --font-base: 'Kanit', sans-serif;
+    --font-secu: 'Josefin Sans', sans-serif;
+
+    --primary-color: #a34dfa;
+    --secondary-color: #ee7300;
+    --third-color: #911b7c;
+    --gradient01: rgb(84, 10, 108, 0.5);
+    --gradient02: rgb(26, 26, 39, 0.25);
+    --dark-color: #000;
+    --white-color: #fff;
+    --light-color: #ffedb7;
+    --bg-color: #1a1a27;
+    --border-color: #262631;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="green"] {
+    --primary-color: #6ae27e;
+    --secondary-color: #ff06ff;
+    --third-color: #12afa6;
+    --gradient01: rgb(84, 10, 108, 0.5);
+    --gradient02: rgba(10, 61, 28, 0.25);
+    --dark-color: #000;
+    --white-color: #fff;
+    --light-color: #ffedb7;
+    --bg-color: #1a1a27;
+    --border-color: #262631;
+}
+
+[data-theme="pink"] {
+    --primary-color: #e9d20a;
+    --secondary-color: #f76a92;
+    --third-color: #b32e2f;
+    --gradient01: rgb(84, 10, 108, 0.5);
+    --gradient02: rgb(247, 106, 146, 0.20);
+    --dark-color: #000;
+    --white-color: #fff;
+    --light-color: #ffedb7;
+    --bg-color: #1a1a27;
+    --border-color: #262631;
+}
+
+[data-theme="orange"] {
+    --primary-color: #eb8d50;
+    --secondary-color: #03e7b4;
+    --third-color: #8b3f1d;
+    --gradient01: rgb(84, 10, 108, 0.5);
+    --gradient02: rgb(235, 141, 80, 0.25);
+    --dark-color: #000;
+    --white-color: #fff;
+    --light-color: #ffedb7;
+    --bg-color: #1a1a27;
+    --border-color: #262631;
+}
+
+[data-theme="violet"] {
+    --primary-color: #cf5aff;
+    --secondary-color: #97df0f;
+    --third-color: #880b69;
+    --gradient01: rgb(84, 10, 108, 0.5);
+    --gradient02: rgb(207, 90, 255, 0.25);
+    --dark-color: #000;
+    --white-color: #fff;
+    --light-color: #ffedb7;
+    --bg-color: #1a1a27;
+    --border-color: #262631;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor
 }

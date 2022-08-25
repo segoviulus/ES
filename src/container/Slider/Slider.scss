@@ -1,0 +1,23 @@
+.slider {
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: grab;
+    background-color: var(--dark-color);
+    max-width: 750px;
+    &__inner {
+        display: flex;
+    }
+
+    &__item {
+        height: 6.5rem;
+        aspect-ratio: 1;
+        padding: 1rem;
+        img {
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+        }
+    }
+}
+
+

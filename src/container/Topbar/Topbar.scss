@@ -1,0 +1,16 @@
+.topbar {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    font-family: var(--font-secu);
+    color: var(--light-color);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    text-transform: uppercase;
+    a > svg {
+        margin-left: 0.7rem;
+        color: var(--light-color);
+    }
+}

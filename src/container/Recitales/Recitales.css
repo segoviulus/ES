@@ -1,0 +1,158 @@
+.recital {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+.recital__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2rem 0 4rem 0;
+}
+
+.recital__fecha {
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
+  max-width: 190px;
+  margin-right: 2rem;
+}
+
+.recital__fecha > h3 {
+  font-family: var(--font-secu);
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 0.05rem;
+  color: var(--third-color);
+  text-transform: uppercase;
+}
+
+.recital__fecha > div {
+  width: 38px;
+  height: 1px;
+  background: var(--third-color);
+  margin-bottom: 0.25rem;
+}
+
+.recital__institucion {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.recital__institucion > h1 {
+  font-family: var(--font-secu);
+  font-size: 1.3rem;
+  color: var(--third-color);
+  text-transform: uppercase;
+}
+
+.recital__institucion > h3 {
+  font-family: var(--font-secu);
+  font-size: 0.8rem;
+  line-height: 24px;
+  color: var(--third-color);
+  text-transform: uppercase;
+}
+
+.recital__ticket {
+  display: block;
+}
+
+.recital__ticket > a {
+  font-family: var(--font-secu);
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--third-color);
+  padding: 0.4rem 0.5rem;
+  color: var(--third-color);
+}
+
+.recital__ticket > a:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.recital__textoSubtitulo2 {
+  margin-top: 2rem;
+}
+
+@media (max-width: 425px) {
+  .recital__container {
+    margin: 1rem 0;
+    display: block;
+  }
+  .recital__fecha {
+    margin: 2rem 0 1rem 0;
+  }
+  .recital__institucion > h1 {
+    font-size: 1.35rem;
+  }
+  .recital__institucion > h3 {
+    font-size: 0.8rem;
+  }
+  .recital__ticket > a {
+    font-size: 0.8rem;
+  }
+}
+
+.recitales {
+  padding: 0 2rem 2rem 2rem;
+  background-color: var(--primary-color);
+}
+
+.recitales__heading {
+  text-align: center;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--third-color);
+  padding-bottom: 2rem;
+}
+
+.recitales__heading div > h4 {
+  font-family: var(--font-secu);
+  font-size: 1rem;
+}
+
+.recitales__heading div > p {
+  font-family: var(--font-secu);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 425px) {
+  .recitales {
+    padding: 1rem;
+  }
+  .recitales__heading {
+    display: block;
+    padding-bottom: 1rem;
+  }
+  .recitales__heading div > h1, .recitales__heading h4, .recitales__heading p {
+    margin-left: 0rem;
+  }
+  .recitales__heading div > h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .recitales__heading div > h4 {
+    font-size: 0.8rem;
+  }
+  .recitales__heading > p {
+    font-size: 0.8rem;
+    max-width: 80%;
+  }
+}
+/*# sourceMappingURL=Recitales.css.map */

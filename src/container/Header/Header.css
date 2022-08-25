@@ -1,0 +1,83 @@
+.app__header {
+  height: 90vh;
+  background: -webkit-gradient(linear, left top, right top, from(var(--gradient02)), to(var(--gradient02))), url("../../assets/erucasativa_portada_color.jpg");
+  background: linear-gradient(to right, var(--gradient02), var(--gradient02)), url("../../assets/erucasativa_portada_color.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+@media screen and (max-width: 425px) {
+  .app__header {
+    background: url("../../assets/bgmobile_bw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
+.app__header-text {
+  font-family: var(--font-secu);
+  text-align: center;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .app__header-text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .app__header-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app__header-text {
+    font-size: 1.8rem;
+  }
+}
+
+.badge-es {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .badge-es div > img {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    width: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .badge-es div > img {
+    width: 650px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .badge-es div > img {
+    width: 900px;
+  }
+}
+
+.descripcion-es {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+/*# sourceMappingURL=Header.css.map */

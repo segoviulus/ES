@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+.app {
+  background: var(--dark-color);
+  font-family: var(--font-base);
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__whitebg {
+  background-color: var(--white-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__primarybg {
+  background-color: var(--primary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 450px) {
+  .app__wrapper {
+    padding: 4rem 1rem 2rem;
   }
 }
+
+.copyright {
+  width: 100%;
+  padding: 2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.copyright p {
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+.head-text {
+  font-size: 12rem;
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 110px;
+}
+
+@media screen and (max-width: 425px) {
+  .head-text {
+    font-size: 5.5rem;
+    line-height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .head-text {
+    font-size: 6rem;
+    line-height: 60px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .head-text {
+    font-size: 14rem;
+  }
+}
+
+.p-text {
+  font-family: var(--font-secu);
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 2000px) {
+  .p-text {
+    font-size: 1.2rem;
+  }
+}
+
+.titulo {
+  text-align: center;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--third-color);
+  padding-top: 2rem;
+  font-size: 2.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .titulo {
+    font-size: 7rem;
+  }
+}
+
+.app__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.app__social div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  margin: 0.25rem 0;
+  border: 1px solid var(--lightGray-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.app__social div svg {
+  width: 15px;
+  height: 15px;
+  color: var(--gray-color);
+}
+
+.app__social div:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.app__social div:hover svg {
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 2000px) {
+  .app__social div {
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem 0;
+  }
+  .app__social div svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.app__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.app__navigation .app__navigation-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cbcbcb;
+  margin: 0.5rem;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.app__navigation .app__navigation-dot:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 2000px) {
+  .app__navigation .app__navigation-dot {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .app__navigation,
+  .app__social {
+    display: none;
+  }
+  .copyright {
+    padding: 2rem;
+  }
+}
+/*# sourceMappingURL=App.css.map */

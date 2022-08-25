@@ -1,0 +1,67 @@
+.app__albums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0 5rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  color: var(--third-color);
+}
+
+.app__album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--dark-color);
+  padding: 1rem 1rem 0 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.app__album:hover {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.app__album img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__album {
+    width: 370px;
+    margin: 2rem 4rem;
+  }
+  .app__album img {
+    height: 320px;
+  }
+}
+
+.album-text {
+  font-family: var(--font-secu);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=Discografia.css.map */

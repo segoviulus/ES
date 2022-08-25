@@ -1,0 +1,6 @@
+export { default as Header } from './Header/Header'
+export { default as Discografia } from './Discografia/Discografia'
+export { default as Recital } from './Recitales/Recital'
+export { default as Footer } from './Footer/Footer'
+export { default as Topbar } from './Topbar/Topbar'
+export { default as Slider } from './Slider/Slider'
